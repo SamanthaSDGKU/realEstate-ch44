@@ -12,6 +12,9 @@ p{
 img{
     max-width:100%;
 }
+a{
+    text-decoration: none;
+}
 /*utilities*/
 .container{
     width:70%;
@@ -29,7 +32,8 @@ img{
     color:white;
     text-align: center;
 }
-.site-init a{
+.site-init a,
+.site-secondary a{
     color:white;
 }
 .bar{
@@ -38,7 +42,10 @@ img{
     height: 100px;
     align-items: center;
 }
-
+.site-secondary{
+    background-color: #1f1f1f;
+    color:white;
+}
 
 /*more about us*/
 .more-about-container{
@@ -61,4 +68,31 @@ img{
     text-align: center;
     text-transform: uppercase;
     margin-bottom:10px;
+}
+
+/*contact*/
+fieldset{
+    padding:20px;
+}
+legend{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.input-container{
+    padding:10px;
+}
+.input-container label{
+    display:inline-block;
+    width:180px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+.input-container input,
+.input-container textarea{
+    background-color: lightgray;
+    border: none;
+    padding:5px;
+    border-radius:5px;
+    width: 70%;
 }
