@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        /* mobile first view
+        /* .site-nav{
+            display: flex;
+            flex-direction: column;
+        } */
+        /*desktop view*/
+        /* @media(min-width:768px){
+            .site-nav{
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }  */
+
+        /*desktop first view*/
+        .site-nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        /*mobile view*/
+        @media(max-width:768px){
+            .site-nav{
+                flex-direction: column;
+            }
+        }
+
+    </style>
 </head>
 <body>
     
-   
+   <nav class="site-nav">
+    <a class="link">Link 1</a>
+    <a class="link">Link 2</a>
+    <a class="link">Link 3</a>
+   </nav>
 </body>
 </html>

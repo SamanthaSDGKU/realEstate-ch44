@@ -21,6 +21,11 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
+@media(max-width:768px) {
+    .container{
+        width: 95%;
+    }
+}
 .title{
     text-align: center;
 }
@@ -38,9 +43,19 @@ a{
 }
 .bar{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     height: 100px;
     align-items: center;
+}
+@media(max-width:768px){
+    .bar{ 
+        flex-direction: column;
+        justify-content: center;
+    }
+    .site-init{
+        height: 20vh;
+    }
 }
 .site-secondary{
     background-color: #1f1f1f;
@@ -53,6 +68,11 @@ a{
     flex-direction: row;
     justify-content: space-around;
     margin-top:40px;
+}
+@media(max-width:768px){
+    .more-about-container{
+        flex-direction: column;
+    }
 }
 .more-about-item{
     padding:10px;
@@ -68,6 +88,35 @@ a{
     text-align: center;
     text-transform: uppercase;
     margin-bottom:10px;
+}
+
+/*houses and penthouses*/
+.houses-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.house-item{
+    background-color: #dedede;
+    margin-right: 10px;
+}
+
+@media(max-width:768px) {
+    .houses-container{
+        flex-direction: column;
+    }
+    .house-item{
+        margin-top: 10px;
+    }
+}
+.house-text{
+    padding: 10px;
+}
+.icons-container{
+    display: flex;
+}
+.icon-item{
+    display: flex;
 }
 
 /*contact*/
